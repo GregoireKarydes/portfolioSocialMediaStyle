@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'helveticaneuemedium';
+    src: url('font/helveticaneue_medium-webfont.woff2') format('woff2'),
+         url('font/helveticaneue_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'helveticaneuemedium', 'Poppins', sans-serif;
+}
+
+/* LOGO USER */
+
+.logo img {
+    width: 5%;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: fixed;
+    min-width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.logo h1 {
+    position: absolute;
+    left: 3%;
+    top: 130px;
+    font-size: 20px;
+    color:#38abee;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+}
+
+.logo h3 {
+    position: absolute;
+    left: 3%;
+    top: 160px;
+    font-size: 15px;
+    color: #6a7e97;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .logo h1 {
+        visibility: hidden;  
+    }
+
+    .logo h3 {
+        visibility: hidden;
+    }
+
+
+    .logo img {
+        margin-left:0px;
+    }
+}
+
+/* MENU */
+
+.icon ul li {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    display: block;
+    width: 20%;
+}
+
+.icon ul {
+    position: absolute;
+    bottom: 5%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.icon img {
+    width: 80px;
+    min-width: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .icon img {
+        margin-left: 0px;
+    }
+}
+
+/* CONTACT MOI */
+#msg {
+    width: 12%;
+    position: absolute;
+    position: fixed;
+    right:3%;
+    top: 3%;
+    min-width: 190px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px)
+{
+    .meteo, #div_horloge {
+        visibility: hidden;
+    }
+
+    .chat {
+        position: absolute;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .music {
+        display: none;
+    }
+}
+
+/* horloge */
+
+#div_horloge {
+    color: #6a7e97;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    position: fixed;
+    z-index: 2;
+}
+/* PAGE INFORMATION */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 12% 100px 12%;
+    background-color: #e5f1fd;
+    overflow: hidden;
+}
+
+.picture {
+    width: 60%;
+    text-align: center;
+}
+
+.picture h1 {
+    margin-top: 20px;
+    color: #38abee;
+    font-weight: bold;
+}
+
+.picture h3 {
+    color: #6a7e97;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#picture {
+    border-radius: 50%;
+    width: 30%;
+    min-width: 150px;
+}
+
+.info {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info h3{
+    color: #38abee;
+    font-weight: bold;
+}
+
+.info ul li {
+    padding-top: 15px;
+    color: #6a7e97;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#lbl {
+    color: black;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+#cv {
+    background-color: #38abee;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+}
+
+/* PAGE SKILL */
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+    margin : 0 30px;
+    text-align: center;
+}
+
+
+
+.skill h3 {
+    padding-bottom: 30px;
+    color: #6a7e97;
+    font-weight: bold;
+    text-align: center;
+}
+.dev, .soft {
+    width: 45%;
+}
+
+.soft a, .dev a {
+        background-color: #38abee;
+        color: white;
+        padding: 10px 20px;
+        position: relative;
+        top: 30px;
+        border-radius: 10px;
+}
+
+
+
+.soft a:hover, .dev a:hover {
+    color: white;
+}
+
+/* PAGE SCHOOOL */
+
+.school {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    background-color: #e5f1fd;
+    justify-content: space-around;
+    position: relative;
+    top: 120px;
+    padding-top: 200px;
+    overflow: hidden;
+
+}
+
+#cursus {
+    text-align: center;
+    color: #38abee;
+    font-weight: bold;
+    position: relative;
+    top: 220px;
+    z-index: 2;
+}
+
+.lycee, .university {
+    background-color:#38abee;
+    border-radius: 30px;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    color: #e5f1fd;
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+
+.lycee h3 {
+    padding-top: 80px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.university h3 {
+    padding-top: 165px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .about, .skill, .cursus, .picture, .info {
+        overflow: hidden;
+    }
+}

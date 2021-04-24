@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grégoire KARYDES | Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hi you ! I'm Gregoire Karydes and this is my portfolio as dev. web">
+        <meta name="keywords" content="grégoire, karydes, portfolio, cv, contact, developpeur web">
+        <link rel="icon" type="image/png" href="/home/img/emoji.png"/>
+
+         <!-- Font -->
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+        <!-- script  -->
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" > 
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- scrollmagic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+        <!-- GreenSock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    
+    </head>
+
+    
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../home/img/emoji.png" alt="KARYDES GREGOIRE">
+                <div class="text">
+                    <h1>Grégoire KARYDES</h1>
+                    <h3>Personal website</h3>
+                </div>
+            </div>
+            <div class="menu">
+                <!-- <div class="contact">
+                    <img src="../home/img/msg.png" alt="contact" id="msg">
+                </div> -->
+                <div class="icon">
+                    <ul>
+                        <li><a href="../home.html"><img src="../home/img/accueil.png" id="accueil"></a></li>
+                        <li><a href="../profil/profil.html"><img src="../home/img/user.png" id="user"></a> </li>
+                        <li><a href="../work/work.html"><img src="../home/img/suitcase.png" id="portfolio"></a> </li>
+                    </ul> 
+                </div>
+            </div>
+        </header>
+        <content>
+ 
+          <p id="controlNext"> ></p>
+          <p id="controlPrev"> <</p>
+
+            <div id="div_horloge"></div>
+            <div class="chat">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-5a121ca1-c812-4799-bb0b-b39a7020366c"></div>
+            </div>
+
+            <!-- CAROUSEL -->
+
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="Udemy/Base indispensable à la programmation.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/Formation complète développeur web.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/GreenSock JS.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/Photoshop.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/ScrollAnim.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/Responsive development.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/SEO.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/Website.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/oneHourJS.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/base algo.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="Udemy/ScrollMagic.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="MIMO/android.PNG">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="MIMO/games.PNG">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="MIMO/hacker.PNG">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="MIMO/ios.PNG">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="MIMO/webdev.PNG">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="MIMO/website.PNG">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+
+
+
+            
+
+        </content>
+        <footer></footer>
+    </body>
+</html>

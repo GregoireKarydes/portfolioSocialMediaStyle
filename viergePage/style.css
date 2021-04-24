@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'helveticaneuemedium';
+    src: url('font/helveticaneue_medium-webfont.woff2') format('woff2'),
+         url('font/helveticaneue_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'helveticaneuemedium', 'Poppins', sans-serif;
+}
+
+/* LOGO USER */
+
+.logo img {
+    width: 5%;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: fixed;
+    min-width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.logo h1 {
+    position: absolute;
+    left: 3%;
+    top: 130px;
+    font-size: 20px;
+    color:#38abee;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+}
+
+.logo h3 {
+    position: absolute;
+    left: 3%;
+    top: 160px;
+    font-size: 15px;
+    color: #6a7e97;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .logo h1 {
+        visibility: hidden;  
+    }
+
+    .logo h3 {
+        visibility: hidden;
+    }
+
+
+    .logo img {
+        margin-left:0px;
+    }
+}
+
+/* MENU */
+
+.icon ul li {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    display: block;
+    width: 20%;
+}
+
+.icon ul {
+    position: absolute;
+    bottom: 5%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.icon img {
+    width: 80px;
+    min-width: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .icon img {
+        margin-left: 0px;
+    }
+}
+
+/* CONTACT MOI */
+#msg {
+    width: 12%;
+    position: absolute;
+    position: fixed;
+    right:3%;
+    top: 3%;
+    min-width: 190px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px)
+{
+    .meteo, #div_horloge {
+        visibility: hidden;
+    }
+
+    .chat {
+        position: absolute;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .music {
+        display: none;
+    }
+}
+
+/* horloge */
+
+#div_horloge {
+    color: #6a7e97;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    position: fixed;
+}
